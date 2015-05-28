@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+    <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#tabel").hide();
+
+            $("#1").click(function(){
+				$("#tabel").show();
+			});
+
+			$("#2").click(function(){
+				$("#tabel").css({'border': '2px solid blue'});
+				$("#tabel").attr('cellspacing', '10px');
+				$("#tabel").css('padding-top', '10px');
+
+			});
+
+			$("#3").click(function(){
+				$("tr:odd").css('background-color', 'grey');
+			});
+
+			$("#4").click(function(){
+				$("#tabel").hide();
+			});
+			
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="knop1" id="1"><br>
+<input type="button" value="knop2" id="2"><br>
+<input type="button" value="knop3" id="3"><br>
+<input type="button" value="knop4" id="4"><br><br>
+
+<table id="tabel" border="2px">
+<tr>
+	<td>Naam</td>
+    <td>Furkan</td>
+</tr>
+<tr>
+	<td>Achternaam</td>
+    <td>bolukbas</td>
+</tr>
+<tr>
+	<td>Studentennummer</td>
+    <td>74757</td>
+</tr>
+<tr>
+	<td>Email</td>
+    <td>74757@glr.nl</td>
+</tr>
+<tr>
+	<td>Klas</td>
+    <td>I2C2</td>
+</tr>
+<tr>
+	<td>9+10</td>
+    <td>21</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title></title>
+    <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery.opdracht41.js"></script>
+    <style>
+    	.goed{
+    		background-color: green;
+    	}
+    	.fout{
+    		background-color: red;
+    	}
+    </style>
+</head>
+<body>
+<form id="myform">	
+<table id="tabel" border="2px">
+	<tr>
+		<td>Naam</td>
+	    <td><input type="text" id="naam" class="verplicht"></td>
+	</tr>
+	<tr>
+		<td>leeftijd</td>
+	    <td><input type="text" placeholder="ddmmjjj" id="leeftijd" class="verplicht"></td>
+	</tr>
+	<tr>
+		<td>email</td>
+	    <td><input type="text" id="email" class="verplicht"></td>
+	</tr>
+</table>
+Optie 1: <input type="checkbox"><br>
+Optie 2: <input type="checkbox"><br>
+Optie 3: <input type="checkbox"><br>
+Optie 4: <input type="checkbox"><br>
+Optie 5: <input type="checkbox"><br><br>
+
+Abboneren op nieuwsbrief?<br>
+<input type="radio" id="radio"><br>
+
+<input type="textbox" id="adres" placeholder="Uw adres"><br><br>
+
+<input type="submit" id="submit" onClick="javascript:valideer();">
+</form>
+
+
+</body>
+</html>

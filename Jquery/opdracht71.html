@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script>
+		$(function()
+		{
+			$("#accordion").accordion({animate:100});
+		});
+		$(function()
+		{
+			var plaatsNaam =
+			[
+				"Amsterdam",
+				"Appelscha",
+				"Breda",
+				"Den Haag",
+				"Dordrecht",
+				"Rotterdam",
+				"Schiedam",
+			];
+			$("#plaats").autocomplete({
+				source: plaatsNaam,
+				autoFocus: true
+			});
+		});
+	</script>
+</head>
+<body>
+	De Links klappen open en tonen de inhoud als er wordt geklikt en de accordion klapt sneller open met de animate optie<br>
+	<div id="accordion">
+		<h3><a href="#">Hoofdstuk 1</a></h3>
+		<div>
+			<p>
+				Dit is de tekst in hoofdstuk 1.
+			</p>
+		</div>
+		<h3><a href="#">Hoofdstuk 2</a></h3>
+		<div>
+			<p>
+				Dit is de tekst in hoofdstuk 2.
+			</p>
+		</div>
+		<h3><a href="#">Hoofdstuk 3</a></h3>
+		<div>
+			<p>
+				Dit is de tekst in hoofdstuk 3.
+			</p>
+		</div>
+		<h3><a href="#">Hoofdstuk 4</a></h3>
+		<div>
+			<p>
+				Dit is de tekst in hoofdstuk 4.
+			</p>
+		</div>					
+	</div>	
+	Een autocomplete feature, het heeft een autofocus optie dat een kader laat zien om de opties<br>
+	<div class="ui-widget">
+		Plaats:
+		<input id="plaats">
+	</div>	
+</body>
+</html>
